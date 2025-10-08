@@ -1,7 +1,9 @@
 name: Workflow Demo
 
 on: 
-  push
+  workflow_dispatch: 
+#  schedule:
+#    - cron: '*/1 * * *'
 
 env:
   ACCESS_ID: ${{ secrets.ACCESS_ID }}
